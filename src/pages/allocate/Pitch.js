@@ -1,10 +1,11 @@
 import { useHistory, useLocation } from "react-router-dom";
-import Breadcrumb from "../components/Breadcrumb";
-import Layout from "../components/Layout";
+import Breadcrumb from "../../components/shared/Breadcrumb";
+import AllocateLayout from "../../components/allocate/AllocateLayout";
+
 
 const Pitch = () => {
   return (
-    <Layout>
+    <AllocateLayout>
       <div className="pitch">
         <h1 className="pitch__title">Pitch</h1>
         <span className="pitch__caption">
@@ -14,7 +15,7 @@ const Pitch = () => {
           <Breadcrumb history={useHistory()} location={useLocation()} />
         </div>
       </div>
-    </Layout>
+    </AllocateLayout>
   );
 };
 

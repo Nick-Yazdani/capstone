@@ -1,11 +1,12 @@
-import Layout from "../components/Layout";
+import AllocateLayout from "../../components/allocate/AllocateLayout";
 
-import AllocateLogoA from "../images/ph_allocate_logo_only.png";
-import PortfolioLogo from "../images/Portfolio_Logo.png";
+
+import AllocateLogoA from "../../images/ph_allocate_logo_only.png";
+import PortfolioLogo from "../../images/Portfolio_Logo.png";
 
 const About = () => {
   return (
-    <Layout>
+    <AllocateLayout>
       <div className="about">
         <h1 className="about__title">About Us</h1>
         <div className="about__container">
@@ -69,7 +70,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AllocateLayout>
   );
 };
 

@@ -1,6 +1,11 @@
-import HowCard from "./HowCard";
 import { faBriefcase, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { faLifeRing } from "@fortawesome/free-regular-svg-icons";
+
+import How from "../../components/shared/How";
+import Landing from "../../components/allocate/Landing";
+import AllocateLayout from "../../components/allocate/AllocateLayout";
+import Project from "../../components/allocate/Project";
+
 
 const cardData = [
     {
@@ -26,21 +31,17 @@ const cardData = [
     }
 ]
 
-const How = () => {
-  return (
-    <div className="how">
-      <h2 className="how__heading">How it works</h2>
-      <p className="how__body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-        debitis maxime delectus commodi ab consequuntur.
-      </p>
-      <div className="cards">
-        {cardData.map(card => {
-            return <HowCard icon={card.icon} title={card.title} body={card.body} cta={card.cta} path={card.path} />
-        })}
-      </div>
-    </div>
-  );
-};
+const landingTitle = "How it works"
+const landingBody = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis debitis maxime delectus commodi ab consequuntur."
 
-export default How;
+const AllocateHome = () => {
+    return (
+        <AllocateLayout>
+            <Landing />
+            <How cardData={cardData} title={landingTitle} body={landingBody} />
+            <Project />
+        </AllocateLayout>
+    )
+}
+
+export default AllocateHome;

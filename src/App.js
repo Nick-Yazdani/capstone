@@ -1,23 +1,29 @@
 import { Switch, Route } from "react-router-dom";
 
-import About from "./pages/About";
-import Allocation from "./pages/Allocation";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Pitch from "./pages/Pitch";
-import Register from "./pages/Register";
-import Squads from "./pages/Squads";
+import AllocateAbout from "./pages/allocate/AllocateAbout";
+import Allocation from "./pages/allocate/Allocation";
+import AllocateHome from "./pages/allocate/AllocateHome";
+import AllocateLogin from "./pages/allocate/AllocateLogin";
+import Pitch from "./pages/allocate/Pitch";
+import AllocateRegister from "./pages/allocate/AllocateRegister";
+import Squads from "./pages/allocate/Squads";
+
+import PortfolioHome from "./pages/portfolio/PortfolioHome";
+
+const allocateBase = "/capstone_allocate"
+const portfolioBase ="/capstone_portfolio"
 
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/pitch" component={Pitch} />
-      <Route path="/squads" component={Squads} />
-      <Route path="/allocation" component={Allocation} />
-      <Route path="/about" component={About} />
-      <Route path="/login" component={Login} />
-      <Route pather="/register" component={Register} />
+      <Route exact path={`${allocateBase}`} component={AllocateHome} />
+      <Route path={`${allocateBase}/pitch`} component={Pitch} />
+      <Route path={`${allocateBase}/squads`} component={Squads} />
+      <Route path={`${allocateBase}/allocation`} component={Allocation} />
+      <Route path={`${allocateBase}/about`} component={AllocateAbout} />
+      <Route path={`${allocateBase}/login`} component={AllocateLogin} />
+      <Route path={`${allocateBase}/register`} component={AllocateRegister} />
+      <Route path={`${portfolioBase}`} component={PortfolioHome} />
     </Switch>
   );
 };
