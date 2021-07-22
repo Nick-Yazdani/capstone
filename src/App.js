@@ -5,6 +5,7 @@ import Allocation from "./pages/Allocation";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Pitch from "./pages/Pitch";
+import Register from "./pages/Register";
 import Squads from "./pages/Squads";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/allocation" component={Allocation} />
       <Route path="/about" component={About} />
       <Route path="/login" component={Login} />
+      <Route pather="/register" component={Register} />
     </Switch>
   );
 };
