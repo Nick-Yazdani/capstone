@@ -1,0 +1,95 @@
+.footer {
+  position: relative;
+  padding: 1rem;
+  background-color: $bg-footer;
+  &__title {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+  &__link {
+    position: relative;
+    color: $color-white;
+    padding: .5rem;
+  
+  }
+  &__icons {
+      padding: 1rem;
+    &--facebook {
+      background-color: $facebook-primary;
+    }
+    &--facebook-circle {
+      color: $facebook-primary;
+    }
+    &--twitter {
+      background-color: $twitter-primary;
+    }
+    &--twitter-circle {
+      color: $twitter-primary;
+    }
+    &--instagram {
+      background-color: $instagram-primary;
+    }
+    &--instagram-circle {
+      color: $instagram-primary;
+    }
+    &--linked-in {
+      background-color: $linked-in-primary;
+    }
+    &--linked-in-circle {
+      color: $linked-in-primary;
+    }
+    &--youtube {
+      background-color: $youtube-primary;
+    }
+    &--youtube-circle {
+      color: $youtube-primary;
+    }
+  }
+  &__body {
+    font-style: italic;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  &__list {
+      padding: 1rem;
+      margin: 0 1rem;
+      width: 100%;
+      &:last-child {
+          margin-right: 3rem;
+      }
+  }
+  &__item {
+      &:not(:last-child) {
+          margin-bottom: 1.5rem;
+      }
+      & a {
+          color: #000;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+        }
+      }
+  }
+}
+
+.icon {
+  color: $color-white;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  transform-origin: center;
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+
+.icon-circle {
+  font-size: 3.75rem;
+
+  &:hover + .icon {
+    transform: translate(-50%, -50%) scale(1.35);
+  }
+}

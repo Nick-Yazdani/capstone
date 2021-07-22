@@ -1,0 +1,10 @@
+.project {
+    background-color: $bg-grey;
+    &__title {
+        font-size: 3.75rem;
+        margin-bottom: 2.5rem;
+    }
+    &__caption {
+        margin-bottom: 2rem;
+    }
+}

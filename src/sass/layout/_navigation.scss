@@ -1,0 +1,12 @@
+.navigation {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        padding: 1.4rem .35rem;
+    }
+    &__logo {
+        padding-right: 3rem;
+    }
+}

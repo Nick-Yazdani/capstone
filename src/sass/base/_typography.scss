@@ -1,0 +1,20 @@
+@import "~@fontsource/open-sans/index.css";
+
+$fonts-path: "../../fonts";
+
+@font-face {
+  font-family: "Worldly Bold";
+  src: url("#{$fonts-path}/worldlybold.woff") format("woff"),
+    url("#{$fonts-path}/worldlybold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Worldly Regular";
+  src: url("#{$fonts-path}/worldlyregular.woff") format("woff"),
+    url("#{$fonts-path}/worldlyregular.ttf") format("truetype");
+}
+$worldly_bold: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !default;
+$worldly_reg: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !default;
+
+* {
+    font-size: 1.07em;
+}

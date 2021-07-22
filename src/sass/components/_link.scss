@@ -1,0 +1,47 @@
+.link {
+    text-decoration: none;
+    color: $text-dark;
+    padding: 1rem;
+    position: relative;
+
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &::before {
+        content:"";
+        display: inline-block;
+        height: 3px;
+        width: 0%;
+        color: $text-dark;
+        background-color: $text-dark;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width .4s;
+    }
+
+    &--nobefore {
+        &::before {
+            display: none;
+        }
+    }
+
+    &--active {
+        &::before {
+            content:"";
+            display: inline-block;
+            height: 3px;
+            width: 100%;
+            color: $text-dark;
+            background-color: $text-dark;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width .4s;
+        }
+    
+    }
+}

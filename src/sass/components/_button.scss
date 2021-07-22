@@ -1,0 +1,40 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: .35rem;
+  font-size: 1.4rem;
+
+  &--outline-turqoise {
+    background-color: transparent;
+    transition: all .2s;
+    &:hover {
+      background-color: $btn-primary;
+      color: #fff;
+    }
+  }
+  &--turqoise {
+    color: $btn-primary;
+    border: 1px solid $btn-primary;
+  }
+
+  &--dark {
+    color: $text-dark;
+    border: 1px solid $text-dark;
+  }
+
+  &--outline-dark {
+    background-color: transparent;
+    transition: all .2s;
+    &:hover {
+      background-color: $text-dark;
+      color: #fff;
+    }
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+  &--large {
+    font-size: 1.65rem;
+  }
+}

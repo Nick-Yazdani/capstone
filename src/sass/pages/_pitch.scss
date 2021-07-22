@@ -1,0 +1,15 @@
+.pitch {
+    padding: 4rem;
+    margin-left: 4rem;
+    &__title {
+        font-size: 2.65rem;
+        color: $deakin-primary;
+        padding: 1rem;
+    }
+    &__caption {
+        padding: 1rem;
+    }
+    &__breadcrumb {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+.card {
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 100%;
+    &__icon {
+        color: $btn-primary;
+        font-size: 3.5rem;
+    }
+    &__title {
+        text-transform: uppercase;
+        padding-top: 1rem;
+        padding-bottom: .65rem;
+    }
+    &__body {
+        line-height: 2rem;
+    }
+    &__link {
+        padding: 1.5rem;
+        display: inline-block;
+        text-decoration: none;
+        color: $btn-primary;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

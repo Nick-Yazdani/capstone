@@ -1,0 +1,28 @@
+.landing {
+    background-color: $bg-grey;
+    text-align: center;
+
+    padding: 5.5rem;
+    &__heading {
+        font-size: 3.5rem;
+        font-weight: bold;
+        padding: 2.5rem;
+    }
+    &__body {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        width: 75%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    &__group {
+        padding: 1rem;
+
+        & .btn {
+            &:not(:first-child)
+            {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

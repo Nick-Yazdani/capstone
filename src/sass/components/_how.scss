@@ -1,0 +1,21 @@
+.how {
+    margin: 0 auto;
+    width: 75%;
+    padding: 2rem;
+    text-align: center;
+    &__heading {
+        font-size: 3.5rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    &__body {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+}
+
+.cards {
+    display: flex;
+}
