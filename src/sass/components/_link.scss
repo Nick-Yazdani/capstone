@@ -1,51 +1,86 @@
 .link {
-    text-decoration: none;
-    color: $text-dark;
-    padding: 1rem;
-    position: relative;
+  text-decoration: none;
+  color: $text-dark;
+  padding: 1rem;
+  position: relative;
 
-    &:hover {
-        &::before {
-            width: 100%;
-        }
-    }
+  @media (min-width: $tablet) {
+    font-size: 0.8rem;
+  }
 
+  @media (min-width: $laptop) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: $laptop-large) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
     &::before {
-        content:"";
-        display: inline-block;
-        height: 3px;
-        width: 0%;
-        color: $text-dark;
-        background-color: $text-dark;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: width .4s;
+      width: 100%;
     }
+  }
 
-    &--nobefore {
-        &::before {
-            display: none;
-        }
-    }
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 0%;
+    color: $text-dark;
+    background-color: $text-dark;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s;
 
-    &--active {
-        &::before {
-            content:"";
-            display: inline-block;
-            height: 3px;
-            width: 100%;
-            color: $text-dark;
-            background-color: $text-dark;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transition: width .4s;
-        }
+    @media (min-width: $tablet) {
+        height: 2px;
+      }
     
+      @media (min-width: $laptop) {
+        height: 2px;
+      }
+    
+      @media (min-width: $laptop-large) {
+          height: 3px;
+      }
+  }
+
+  &--nobefore {
+    &::before {
+      display: none;
     }
-    &__logo {
-        max-width: 100%;
-        height: auto;
+  }
+
+  &--active {
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 100%;
+      color: $text-dark;
+      background-color: $text-dark;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: width 0.4s;
+
+      @media (min-width: $tablet) {
+        height: 2px;
+      }
+    
+      @media (min-width: $laptop) {
+        height: 2px;
+      }
+    
+      @media (min-width: $laptop-large) {
+          height: 3px;
+      }
     }
+  }
+  &__logo {
+    max-width: 100%;
+    height: auto;
+  }
 }

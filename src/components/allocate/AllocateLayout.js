@@ -26,7 +26,7 @@ const navigationItems = [
     },
     {
         name: "About Us",
-        path: `${basePath}/about`
+        path: `/${basePath}/about`
     },
 ]
 

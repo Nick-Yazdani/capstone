@@ -1,8 +1,18 @@
 .project {
     background-color: $bg-grey;
     &__title {
-        font-size: 3.75rem;
         margin-bottom: 2.5rem;
+        @media (min-width: $tablet) {
+            font-size: 1.5rem;
+          }
+        
+          @media (min-width: $laptop) {
+            font-size: 2.5rem;
+          }
+        
+          @media (min-width: $laptop-large) {
+            font-size: 3.5rem;
+          }
     }
     &__caption {
         margin-bottom: 2rem;

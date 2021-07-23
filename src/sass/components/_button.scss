@@ -3,7 +3,18 @@
   display: inline-block;
   padding: .6rem 1rem;
   border-radius: .35rem;
-  font-size: 1.4rem;
+
+  @media (min-width: $tablet) {
+    font-size: .8rem;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: $laptop-large) {
+    font-size: 1.4rem;
+  }
 
   &--outline-turqoise {
     background-color: transparent;
@@ -35,6 +46,17 @@
     text-transform: uppercase;
   }
   &--large {
-    font-size: 1.65rem;
+    @media (min-width: $tablet) {
+      font-size: .8rem;
+    }
+  
+    @media (min-width: $laptop) {
+      font-size: 1.2rem;
+    }
+  
+    @media (min-width: $laptop-large) {
+      font-size: 1.65rem;
+    }
+  
   }
 }

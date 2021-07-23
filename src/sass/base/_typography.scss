@@ -17,4 +17,7 @@ $worldly_reg: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !defa
 
 * {
     font-size: 1.07em;
+    @media (min-width: $laptop) {
+      font-size: 1.03em;
+    }
 }

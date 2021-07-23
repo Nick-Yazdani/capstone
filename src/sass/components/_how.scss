@@ -4,9 +4,19 @@
     padding: 2rem;
     text-align: center;
     &__heading {
-        font-size: 3.5rem;
         font-weight: bold;
         padding: 1rem;
+        @media (min-width: $tablet) {
+            font-size: 1.75rem;
+          }
+        
+          @media (min-width: $laptop) {
+            font-size: 2.5rem;
+          }
+        
+          @media (min-width: $laptop-large) {
+            font-size: 3.5rem;
+          }
      
     }
     &__body {
@@ -14,6 +24,19 @@
         line-height: 2.2rem;
         margin: 0 auto;
         padding: 1rem;
+        @media (min-width: $tablet) {
+            font-size: 1.75rem;
+          }
+        
+          @media (min-width: $laptop) {
+            font-size: .95rem;
+            line-height: 1.6rem;
+          }
+        
+          @media (min-width: $laptop-large) {
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+          }
     }
 }
 
