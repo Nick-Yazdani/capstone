@@ -6,7 +6,7 @@ const Breadcrumb = ({ location }) => {
 
   useEffect(() => {
     setBreadcrumb(locationSplit(location));
-  }, []);
+  }, [location]);
 
   const locationSplit = (location) => {
     let pathArray = location.pathname.split("/");

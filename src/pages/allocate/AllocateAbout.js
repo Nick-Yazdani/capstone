@@ -34,7 +34,7 @@ const About = () => {
                 <img
                   className="about__logo"
                   src={AllocateLogoA}
-                  alt="Allocate logo image without text"
+                  alt="Allocate logo without text"
                 />
               </div>
             </div>
@@ -45,7 +45,7 @@ const About = () => {
                 <img
                   className="about__logo"
                   src={PortfolioLogo}
-                  alt="Portfolio logo image"
+                  alt="Portfolio logo"
                 />
               </div>
             </div>
